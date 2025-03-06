@@ -16,8 +16,8 @@
 	<description>Demo project for Spring AI Concepts</description>
 
 	<modules>
-		<module>ai</module>
 		<module>ai/chat-model</module>
+		<module>ai/open-ai</module>
 	</modules>
 
 	<properties>
