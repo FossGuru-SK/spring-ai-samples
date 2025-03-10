@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "e832c294-7060-464b-80d7-69f65a2aff3a",
+		"name": "FossGuru-SpringAI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26818013"
+	},
+	"item": [
+		{
+			"name": "Mistral-AI",
+			"item": [
+				{
+					"name": "chat-model",
+					"item": [
+						{
+							"name": "ask",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8081/ask?question=Who are you?",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8081",
+									"path": [
+										"ask"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "Who are you?"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Open-AI",
+			"item": [
+				{
+					"name": "chat-model",
+					"item": [
+						{
+							"name": "ask",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/ask?question=Who are you?",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"ask"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "Who are you?"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "image-model",
+					"item": [
+						{
+							"name": "ask-image",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/ask/image?message=Horse running behind tige",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"ask",
+										"image"
+									],
+									"query": [
+										{
+											"key": "message",
+											"value": "Horse running behind tige"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "speech-model",
+					"item": [
+						{
+							"name": "ask-speech",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/ask/speech?message=Horse running behind tige",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"ask",
+										"speech"
+									],
+									"query": [
+										{
+											"key": "message",
+											"value": "Horse running behind tige"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "speech-to-text-model",
+					"item": [
+						{
+							"name": "ask-speech-to-text",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8082/transcription",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8082",
+									"path": [
+										"transcription"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Deepseek-AI",
+			"item": [
+				{
+					"name": "chat-model",
+					"item": [
+						{
+							"name": "ask",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/ask?question=Who are you?",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"ask"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "Who are you?"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "prompt",
+					"item": [
+						{
+							"name": "tourist-guide",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/tourist/guide?country=Switzerland",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"tourist",
+										"guide"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "Switzerland"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "tourist-guide-with-system-system",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/tourist/guide/system?country=India",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"tourist",
+										"guide",
+										"system"
+									],
+									"query": [
+										{
+											"key": "country",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "know country capitals",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/country/capitals?countryNames=India,Germany,Canada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"country",
+										"capitals"
+									],
+									"query": [
+										{
+											"key": "countryNames",
+											"value": "India,Germany,Canada"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "know country capitals List",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/country/capitals/list?countryNames=India,Germany,Canada",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"country",
+										"capitals",
+										"list"
+									],
+									"query": [
+										{
+											"key": "countryNames",
+											"value": "India,Germany,Canada"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "know country capitals Bean",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/country/capitals/bean?countryNames=India",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"country",
+										"capitals",
+										"bean"
+									],
+									"query": [
+										{
+											"key": "countryNames",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Embeding Model(Vector)",
+					"item": [
+						{
+							"name": "ai-embedding",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8084/ai/embedding?message=India",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8084",
+									"path": [
+										"ai",
+										"embedding"
+									],
+									"query": [
+										{
+											"key": "message",
+											"value": "India"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

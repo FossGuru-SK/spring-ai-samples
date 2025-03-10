@@ -13,6 +13,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>deepseek-ai-chat-model</module>
+        <module>deepseek-ai-prompt</module>
+        <module>deepseek-ai-embedding-model</module>
     </modules>
 
     <properties>

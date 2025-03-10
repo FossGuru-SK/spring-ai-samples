@@ -5,31 +5,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.fossguru.ai.demo</groupId>
-        <artifactId>spring-ai-samples</artifactId>
+        <artifactId>open-ai</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>open-ai</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>open-ai-chat-model</module>
-        <module>open-ai-image-model</module>
-        <module>open-ai-speech-model</module>
-        <module>open-ai-speech-text-model</module>
-    </modules>
+    <artifactId>open-ai-speech-model</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-openai-spring-boot-starter</artifactId>
-        </dependency>
-    </dependencies>
 
 </project>
